@@ -58,7 +58,3 @@ select[disabled]::-ms-expand,
 select[readonly]::-ms-expand {
 	display: none;
 }
-
-
-/* @todo */
-/* disbale behavior of textarea, checkbox*/
