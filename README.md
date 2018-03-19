@@ -1,4 +1,4 @@
-# TextAlike
+# TextAlike.css
 
 Show readonly/disabled form elements just like normal text.
 
