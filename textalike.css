@@ -1,0 +1,64 @@
+/* show disabled form elements like text */
+/* hidden interactive elements */
+form[disabled] button,
+form[disabled] input[type=file] {
+	display : none
+}
+
+/* elements disabled/readonly */
+.disabled:focus,
+.readonly:focus,
+form[disabled] input,
+form[disabled] textarea,
+form[disabled] select,
+input[disabled],
+input[readonly],
+select[disabled],
+select[readonly],
+textarea[disabled],
+textarea[readonly] {
+	cursor: text;
+	background: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	outline: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-box-shadow: none;
+}
+/* hidden unselected item for checkbox and radio */
+.disabled input[type=checkbox]:not(:checked),
+.readonly input[type=checkbox]:not(:checked),
+input[type=checkbox][disabled]:not(:checked),
+input[type=checkbox][readonly]:not(:checked) {
+	display: none;
+}
+/* hidden textarea resizable grabber */
+.disabled textarea,
+.readonly textarea,
+form[disabled] textarea,
+textarea[disabled],
+textarea[readonly] {
+    resize: none;
+}
+/* hidden select triangle arrow */
+.disabled select,
+.readonly select,
+form[disabled] select,
+select[disabled],
+select[readonly] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.disabled select::-ms-expand,
+.readonly select::-ms-expand,
+form[disabled] select::-ms-expand,
+select[disabled]::-ms-expand,
+select[readonly]::-ms-expand {
+	display: none;
+}
+
+
+/* @todo */
+/* disbale behavior of textarea, checkbox*/
