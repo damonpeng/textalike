@@ -2,6 +2,9 @@
 
 Show readonly/disabled form elements just like normal text.
 
+## Demo
+
+https://damonpeng.github.io/textalike/
 
 ## Drawbacks
 
